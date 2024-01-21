@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-21T04:41:57.670Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="fEZ2t0cmMaD-VBoa59KZ" version="22.1.20" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-01-21T05:36:37.461Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mVUlz18CV9MZygm3Vymg" version="22.1.20" type="github" pages="5">
   <diagram name="job-dag" id="CYR20Yl3O60PS25mUJ1M">
     <mxGraphModel dx="1162" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -389,11 +389,8 @@
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-13" value="6. update task status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-6" target="eEiMm95zPHRdRTlbG_Ap-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-14" value="标红色的部分数据库的交互会非常频发，怎么解决？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="130" y="440" width="170" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-18" value="所有组件通过restful接口与db交互，不直接创建jdbc connection，以减少connection数量" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="340" y="432.5" width="190" height="75" as="geometry" />
+          <mxGeometry x="150" y="432.5" width="190" height="75" as="geometry" />
         </mxCell>
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-19" value="db proxy module" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="341" y="735" width="120" height="60" as="geometry" />
