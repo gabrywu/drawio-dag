@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-21T04:02:29.526Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="xudBuf7dEQhX_11gUPbZ" version="22.1.20" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-01-21T04:13:49.464Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ZdyoINHhS_zKXjj9Cn-K" version="22.1.20" type="github" pages="5">
   <diagram name="job-dag" id="CYR20Yl3O60PS25mUJ1M">
     <mxGraphModel dx="1162" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -402,6 +402,9 @@
         </mxCell>
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-16" value="cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eEiMm95zPHRdRTlbG_Ap-17">
           <mxGeometry x="80" y="70" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-18" value="所有组件通过restful接口与db交互，不直接创建jdbc connection，以减少connection数量" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="432.5" width="190" height="75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
