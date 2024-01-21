@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-21T03:30:26.579Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="zpzb0duZiDpmpPfF0lmM" version="22.1.20" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-01-21T03:33:34.335Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Knp5CDJNkAtJvRMojh5I" version="22.1.20" type="github" pages="5">
   <diagram name="job-dag" id="CYR20Yl3O60PS25mUJ1M">
     <mxGraphModel dx="1162" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -340,49 +340,28 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.433;exitY=0.933;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-1" target="YxrcBDr469sf-bk-blGe-1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="69" y="360" />
-              <mxPoint x="310" y="360" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-5" value="3. schedule jobs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eEiMm95zPHRdRTlbG_Ap-4">
-          <mxGeometry x="-0.0839" y="4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="YxrcBDr469sf-bk-blGe-1" value="scheduler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="260" width="120" height="60" as="geometry" />
+          <mxGeometry x="140" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YxrcBDr469sf-bk-blGe-3" value="1. pull jobs &amp;amp; tasks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-2" target="YxrcBDr469sf-bk-blGe-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-7" value="5. pull runable tasks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-2" target="eEiMm95zPHRdRTlbG_Ap-6">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-7" value="3. pull runable tasks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-2" target="eEiMm95zPHRdRTlbG_Ap-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YxrcBDr469sf-bk-blGe-2" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="414" y="40" width="70" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="YxrcBDr469sf-bk-blGe-5" value="2. cache some jobs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-1" target="YxrcBDr469sf-bk-blGe-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="91" y="290" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-1" value="local cache" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="260" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-3" value="4.1 generate tasks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-1" target="YxrcBDr469sf-bk-blGe-2">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-3" value="2.1 generate tasks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-1" target="YxrcBDr469sf-bk-blGe-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-11" value="6. submit jobs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-6" target="eEiMm95zPHRdRTlbG_Ap-10">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-11" value="4. submit jobs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-6" target="eEiMm95zPHRdRTlbG_Ap-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-6" value="worker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="590" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-9" value="4.2 calc task dependencies" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.855;entryY=1;entryDx=0;entryDy=-4.35;entryPerimeter=0;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-1" target="YxrcBDr469sf-bk-blGe-2">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-9" value="2.2 calc task dependencies" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.855;entryY=1;entryDx=0;entryDy=-4.35;entryPerimeter=0;" edge="1" parent="1" source="YxrcBDr469sf-bk-blGe-1" target="YxrcBDr469sf-bk-blGe-2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="310" y="350" />
@@ -390,7 +369,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-12" value="7. get task status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-10" target="eEiMm95zPHRdRTlbG_Ap-6">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-12" value="5. get task status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-10" target="eEiMm95zPHRdRTlbG_Ap-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="650" y="330" as="targetPoint" />
             <Array as="points">
@@ -402,7 +381,7 @@
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-10" value="agents" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="827" y="250" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-13" value="8. update task status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=45;entryPerimeter=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-6" target="YxrcBDr469sf-bk-blGe-2">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-13" value="6. update task status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=45;entryPerimeter=0;" edge="1" parent="1" source="eEiMm95zPHRdRTlbG_Ap-6" target="YxrcBDr469sf-bk-blGe-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
