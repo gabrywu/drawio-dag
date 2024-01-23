@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-23T06:43:49.841Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="DpYlYofbQBaQDOGsZcxB" version="22.1.21" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-01-23T06:48:09.148Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="H4pqCdxFivWBqDtr4hj2" version="22.1.21" type="github" pages="5">
   <diagram name="job-dag" id="CYR20Yl3O60PS25mUJ1M">
     <mxGraphModel dx="1142" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -343,7 +343,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YxrcBDr469sf-bk-blGe-1" value="scheduler" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="YxrcBDr469sf-bk-blGe-1" value="scheduler&lt;br&gt;(gRPC client)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YxrcBDr469sf-bk-blGe-3" value="1. pull jobs &amp;amp; tasks" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3399;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="eEiMm95zPHRdRTlbG_Ap-15" target="YxrcBDr469sf-bk-blGe-1" edge="1">
@@ -365,7 +365,7 @@
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-11" value="4. submit jobs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eEiMm95zPHRdRTlbG_Ap-6" target="eEiMm95zPHRdRTlbG_Ap-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-6" value="worker" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-6" value="worker&lt;br&gt;(gRPC client)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="260" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-9" value="2.2 calc task dependencies" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0080;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="YxrcBDr469sf-bk-blGe-1" target="eEiMm95zPHRdRTlbG_Ap-15" edge="1">
@@ -434,7 +434,7 @@
         <mxCell id="eEiMm95zPHRdRTlbG_Ap-32" value="db operations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="480" y="715" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="eEiMm95zPHRdRTlbG_Ap-15" value="db proxy" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+        <mxCell id="eEiMm95zPHRdRTlbG_Ap-15" value="db proxy&lt;br&gt;(gRPC server)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="385" y="50" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="MGfQ-sLMvkJLVe4nrvr3-1" value="logs??存哪里？&lt;br&gt;2024年01月23日:先不考虑" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
@@ -445,6 +445,9 @@
         </mxCell>
         <mxCell id="2U1jNOdkV0aKdOgpYXph-1" value="gRPCkey使用流式API获取数据库数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="367" y="444" width="156" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="2U1jNOdkV0aKdOgpYXph-2" value="如果scheduler,worker只是简单的gRPC client，则无法对外提供服务。db proxy可以纯粹的是server，它就是用来对外提供服务的，不依赖外部组件。其他组件最好还是springboot服务，只是拥有一个gRPC client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="571" y="419.5" width="256" height="96" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
